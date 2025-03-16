@@ -108,7 +108,7 @@ public class BookDAO {
      * @returnall books with book count > 0.
      */
     public List<Book> getBooksWithBookCountOverZero(){
-        Connection connection = ConnectionUtil.getConnection();
+        Connection connection = ConnectionUtil.getConnection() ;
         List<Book> books = new ArrayList<>();
         try {
             //Write SQL logic here
