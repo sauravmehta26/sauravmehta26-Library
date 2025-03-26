@@ -213,8 +213,8 @@ public class LibraryAppTest {
         Mockito.when(mockBookDAO.getAllBooks()).thenReturn(bookList);
         Mockito.when(mockBookDAO.getBookByIsbn(104)).thenReturn(null);
         Mockito.when(mockBookDAO.insertBook(b4)).thenReturn(b4);
-        // Assert.assertEquals(b4, bookService.addBook(b4));
-        // Mockito.verify(mockBookDAO).insertBook(b4);
+        //Assert.assertEquals(b4, bookService.addBook(b4));
+        //Mockito.verify(mockBookDAO).insertBook(b4);
     }
     /**
      * When addBook is called and the mockBookDAO already contains the book, the method should return null
